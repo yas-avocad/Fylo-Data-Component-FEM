@@ -110,7 +110,7 @@ METER
 }
 
 .storage-meter-color {
-  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   height: 14px;
   border-radius: 8px;
   width: 193px;
