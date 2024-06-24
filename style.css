@@ -1,0 +1,273 @@
+:root {
+  --Gradient: linear-gradient hsl(6, 100%, 80%), hsl(335, 100%, 65%);
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+  --very-dark-blue: hsl(229, 57%, 11%, 50%);
+  --background: hsl(224, 61%, 15%, 100%);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height:100svh;
+  gap: 16px;
+}
+
+body {
+  background-color: var(--background);
+  background-image: url(images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom;  
+  font-family: raleway;
+}
+
+/******
+CONTAINER ONE
+******/
+
+.top-container {
+  background-color: var(--Dark-Blue);
+  border-radius: 10px 100px 10px 10px;
+  padding-top: 38px; 
+  padding-bottom: 38px;
+}
+
+.logo {
+  margin-inline: 41.13px 149.46px;
+  margin-bottom: 33.18px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16.5px;
+  margin-inline: 41.13px 108.33px;
+}
+
+.icon-background {
+  background-color: var(--Very-Dark-Blue);
+  padding: 0px;
+  margin: 0px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.icon-background:nth-child(1) {
+  padding: 12px 14.82px 12.02px 14.08px;
+}
+
+.icon-background:nth-child(2) {
+  padding: 14px 12.04px 14.8px 12.04px;
+}
+
+.icon-background:nth-child(3) {
+  padding: 16px 12.04px 16px 12.04px;
+}
+
+/**********
+BOTTOM CONTAINER
+***********/
+
+.bottom-container {
+  background-color: var(--Dark-Blue);
+  border-radius: 10px;
+  padding-top: 32px; 
+  padding-bottom: 52px;
+  position: relative;
+
+  }
+
+.storage-text {
+  color: var(--Pale-Blue);
+  font-size: .875rem;
+  margin-inline: 48px 50px;
+  margin-bottom: 16px;
+
+}
+
+/*******
+METER
+*******/
+
+.storage-meter {
+  background-color: var(--Very-Dark-Blue);
+  height: 20px;
+  width: 262px;
+  border-radius: 10px;
+  padding: 3px;
+  margin-inline: 32px;
+  margin-bottom: 10px;
+}
+
+.storage-meter-color {
+  background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height: 14px;
+  border-radius: 8px;
+  width: 193px;
+  padding: 2px;
+}
+
+.storage-dot {
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  margin-left: 179px;
+}
+
+.meter-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 32px;
+  color: var(--Pale-Blue);
+  font-weight: bold;
+  font-size: .75rem;
+}
+
+.remaining-total-container {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  position: absolute;
+  left: 73px;
+  top: 121px;
+  padding: 13px 28px;
+
+}
+
+.total-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--Very-Dark-Blue);
+  padding: 0px;
+  vertical-align: middle;
+
+}
+
+span {
+  font-size: .75rem;
+  font-weight: bold;
+  color: var(--very-dark-blue);
+  margin-left: 9px;
+  vertical-align: middle;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 375px) {
+  main {
+    flex-direction: row;
+    gap: 30px;
+  }
+  
+  body {
+    background-image: url(images/bg-desktop.png);
+  }
+  
+  /******
+  CONTAINER ONE
+  ******/
+  
+  .top-container {
+    padding-top: 38px; 
+    padding-bottom: 38px;
+  }
+  
+  .logo {
+    margin-inline: 41px 174px;
+    margin-bottom: 33px;
+  }
+  
+  .icon-container {
+    gap: 16px;
+    margin-inline: 41px 133px;
+  }
+  
+  .icon-background:nth-child(1) {
+    padding: 12px 14.78px 12.02px 14.04px;
+  }
+  
+  .icon-background:nth-child(2) {
+    padding: 14px 12px 14.8px 12px;
+  }
+  
+  .icon-background:nth-child(3) {
+    padding: 16px 12px 16px 12px;
+  }
+  
+  /**********
+  BOTTOM CONTAINER
+  ***********/
+  
+  .bottom-container {
+    padding-top: 36px; 
+    padding-bottom: 36px;
+    margin-top: 48px;
+    }
+  
+  .storage-text {
+    margin-inline: 39px 273px;
+    margin-bottom: 16px;
+  }
+  
+  /*******
+  METER
+  *******/
+  
+  .storage-meter {
+    width: 459px;
+    margin-inline: 40px 41px;
+    margin-bottom: 16px;
+  }
+  
+  .storage-meter-color {
+    width: 339px;
+  }
+  
+  .storage-dot {
+    border-radius: 10px;
+    margin-left: 324px;
+  }
+  
+  .meter-text {
+    margin-inline: 39px 40px;
+  }
+  
+  .remaining-total-container {
+    background-color: white;
+    border-radius: 10px 10px 0px 10px;
+    top: -55px;
+    left: 320px;
+  }
+
+  .triangle {
+    background-color: white;
+    height: 22.66px;
+    width: 22.66px;
+    position: absolute;
+    top: 70px;
+    left: 164px;
+    clip-path: polygon(100% 100%, 0% 0%, 100% 0%);
+
+  }
+
+  /*
+  
+  .triangle-blue {
+    background-color: var(--Dark-Blue);
+    height: 29px;
+    width: 29px;
+    position: absolute;
+  }
+  */
+}
